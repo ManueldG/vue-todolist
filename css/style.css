@@ -1,0 +1,50 @@
+*{
+    font-family:sans-serif;
+}
+
+body{    
+    background-color: blue;
+    color:coral;
+}
+
+#app{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 10px;
+    text-align:center;
+    font-weight: 700;
+}
+
+.add-todo{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    border: 0;
+    background-color: rgb(89, 89, 236);
+    outline: none;
+}
+
+.add-todo:focus,
+.add-todo:hover{
+    background-color:black;
+    color:aliceblue;
+}
+
+.todos li{
+    display:flex;
+    justify-content:space-between;
+       
+}
+
+.todos li:not(:last-child){
+    
+    border-bottom: 1px solid violet;    
+}
+
+.complete{
+    text-decoration: line-through;
+}
