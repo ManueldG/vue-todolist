@@ -15,15 +15,22 @@ function main(){
         newTodo:'',
         },
         methods:{
-            addTodo:function(){
-            
+            addTodo:function(){            
             if (this.newTodo!=='')
                 this.todos.push({
                     text:this.newTodo,
                     complete:false,
                 });
                 this.newTodo='';
-        },
+            },
+            update(index){
+                this.todos[index].complete=!this.todos[index].complete;
+            },
+            remove(index){
+                this.todos.splice(index,1);
+            }
+
+
     }
 
 

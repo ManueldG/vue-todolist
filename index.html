@@ -27,17 +27,22 @@
         <main>
             <section class="insert">
                 <input type="text" class="add-todo" placeholder="inserisci elemento" v-model="newTodo" @keyup.enter="addTodo">
-                <button @click="addTodo" >add</button>
+                <button @click="addTodo">add</button>
             </section>
             
             <ul class="todos" >
                 <li class="todo" v-for="(todo,index) in todos">
-                    <span class="text" :class="{complete:todo.complete}">
+                    <span class="text" :class="{complete:todo.complete}" >
                         {{todo.text}}
                     </span>
-                    <span class="material-icons-two-tone">
-                        backspace
+                        <span class="admin"><span class="material-icons-two-tone" @click="update(index)">
+                            settings
+                            </span>
+                        <span class="material-icons-two-tone" @click="remove(index)">
+                            backspace
+                        </span>
                     </span>
+                    
                 </li>
                 <div id="template"style="display: none;">
                     <li >
