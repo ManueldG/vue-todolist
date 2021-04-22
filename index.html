@@ -25,10 +25,19 @@
             <h1>Da fare Lista</h1>
         </header>
         <main>
-            <input type="text" class="add-todo" placeholder="inserisci elemento" >
+            <div class="insert">
+                <input type="text" class="add-todo" placeholder="inserisci elemento" v-model="newTodo">
+                <button @click="addTodo">add</button>
+            </div>
+            
             <ul class="todos" >
                 <li class="todo" v-for="(todo) in todos">
-                    <span class="text">{{todo.text}}</span>
+                    <span class="text">
+                        {{todo.text}}
+                    </span>
+                    <span class="material-icons-two-tone">
+                        backspace
+                    </span>
                 </li>
                 <div id="template"style="display: none;">
                     <li >

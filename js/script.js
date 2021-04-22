@@ -12,9 +12,10 @@ function main(){
                 complete:false,
             }
         ],
+        newTodo:'',
         },
         methods:{
-            X:function(){
+            addTodo:function(){
             console.log("ciao");
         },
     }
