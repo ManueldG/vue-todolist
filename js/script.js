@@ -19,6 +19,11 @@ function main(){
             console.log("ciao");
             if (this.newTodo!=='')
                 console.log("dentro if");
+                this.todos.push({
+                    text:this.newTodo,
+                    complete:false,
+                });
+                console.log(this.todos);
         },
     }
 
