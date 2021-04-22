@@ -17,6 +17,8 @@ function main(){
         methods:{
             addTodo:function(){
             console.log("ciao");
+            if (newTodo!=='')
+                console.log("dentro if");
         },
     }
 
