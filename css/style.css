@@ -45,15 +45,15 @@ h1{
     color:aliceblue;
 }
 
-.todos ul li{
+ul.todos li{
     display:flex;
     justify-content:space-between;
     border-bottom: 1px solid violet;  
        
 }
 
- .todos ul li:last-child{    
-      border-bottom:none;
+ ul.todos li:last-of-type{ 
+    border-bottom:none;
 }
 
 .complete{
