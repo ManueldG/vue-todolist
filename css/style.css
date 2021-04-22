@@ -19,10 +19,21 @@ h1{
     font-weight: 700;
 }
 
-.add-todo{
-    width:100%;
-    padding:10px;
+.insert{
+    display:flex;
+    align-items:center;
     margin-bottom:20px;
+}
+
+.insert button{
+    flex-basis: 30px;
+    height:100%;
+
+}
+
+.add-todo{    
+    flex-grow: 1;    
+    padding:10px;
     border: 0;
     background-color: rgb(89, 89, 236);
     outline: none;
