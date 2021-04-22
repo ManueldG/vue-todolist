@@ -26,7 +26,7 @@
         </header>
         <main>
             <section class="insert">
-                <input type="text" class="add-todo" placeholder="inserisci elemento" v-model="newTodo" @keyup.enter="addTodo">
+                <input type="text" class="add-todo" placeholder="inserisci elemento" v-model.trim="newTodo" @keyup.enter="addTodo">
                 <button @click="addTodo">add</button>
             </section>
             
