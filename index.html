@@ -39,13 +39,14 @@
                     <span class="text" :class="{complete:todo.complete}" >
                         {{todo.text}}
                     </span>
-                        <span class="admin"><span class="material-icons-two-tone" @click="update(index)">
+                        <span class="admin">
+                            <span class="material-icons-two-tone" @click="update(index)">
                             settings
                             </span>
-                        <span class="material-icons-two-tone" @click="remove(index)">
-                            backspace
+                            <span class="material-icons-two-tone" @click="remove(index)">
+                                backspace
+                            </span>
                         </span>
-                    </span>
                     
                 </li>
                 <div id="template"style="display: none;">

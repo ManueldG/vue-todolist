@@ -53,6 +53,7 @@ h1{
     flex-grow: 1;    
     padding:10px;
     border: 0;
+    border-radius:5px;
     background-color: rgb(89, 89, 236);
     outline: none;    
 }
@@ -81,12 +82,19 @@ ul.todos li{
 ul.todos li .text{
     margin-right: 50px;
     flex-grow:1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
-
 
  ul.todos li:last-of-type{ 
     border-bottom:none;
+}
+
+.admin{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
 }
 
 .complete{
