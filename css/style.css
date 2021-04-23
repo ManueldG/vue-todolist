@@ -25,7 +25,7 @@ h1{
 }
 
 .btn{
-    background-color:crimson;
+    background-color:coral;
     padding:5px;
     border-radius: 5px;
     outline: none;
@@ -33,7 +33,7 @@ h1{
 }
 
 .btn:active{
-    background-color:rgb(146, 12, 39);
+    background-color:rgb(134, 39, 5);
     border: 1px solid rgb(146, 12, 39);
 }
 
@@ -73,9 +73,17 @@ h1{
 
 ul.todos li{
     display:flex;
+    text-align:right;
     justify-content:space-between;
     border-bottom: 1px solid violet;       
 }
+
+ul.todos li .text{
+    margin-right: 50px;
+    flex-grow:1;
+}
+
+
 
  ul.todos li:last-of-type{ 
     border-bottom:none;
