@@ -11,12 +11,26 @@ body{
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    cursor: url(https://cdn.custom-cursor.com/db/6632/32/cute-highlighter-pen-and-notebook-cursor.png) , default;
 }
 
 h1{
     margin-bottom: 10px;
     text-align:center;
     font-weight: 700;
+}
+
+.btn{
+    background-color:crimson;
+    padding:5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.btn:active{
+    background-color:rgb(146, 12, 39);
+    border: 1px solid rgb(146, 12, 39);
 }
 
 .insert{
@@ -36,7 +50,7 @@ h1{
     padding:10px;
     border: 0;
     background-color: rgb(89, 89, 236);
-    outline: none;
+    outline: none;    
 }
 
 .add-todo:focus,
@@ -45,11 +59,18 @@ h1{
     color:aliceblue;
 }
 
+.todos{
+    background-color:lemonchiffon;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 3px 3px 20px 4px grey;
+}
+
 ul.todos li{
     display:flex;
     justify-content:space-between;
-    border-bottom: 1px solid violet;  
-       
+    border-bottom: 1px solid violet;       
 }
 
  ul.todos li:last-of-type{ 
