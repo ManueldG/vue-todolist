@@ -9,15 +9,19 @@ body{
 
 #app{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 20px;
     cursor: url(https://cdn.custom-cursor.com/db/6632/32/cute-highlighter-pen-and-notebook-cursor.png) , default;
 }
 
 h1{
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align:center;
     font-weight: 700;
+}
+
+.insert{
+    margin-bottom: 40px;
 }
 
 .btn{
